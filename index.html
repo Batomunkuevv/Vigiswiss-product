@@ -1,0 +1,1074 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Product page</title>
+    <meta name="description" content="Chip reviewer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="site-header">
+    <div class="container">
+        <div class="site-header__top">
+            <div class="site-panel">
+                <a href="<?= $host_url; ?>/" class="header-logo logo">
+                    <picture>
+                        <source srcset="images/logo-mobile.svg" media="(max-width: 576px)" />
+                        <img loading="lazy" src="images/logo.svg" alt="Logo vigiswiss.ch" title="logo" />
+                    </picture>
+                </a>
+                <div class="site-header__advantages">
+                    <div class="site-header__advantage"><img loading="lazy" src="images/icons/casino.svg" alt="casino" title="casino" /> 5 789 casino tested by us</div>
+                    <div class="site-header__advantage"><img loading="lazy" src="images/icons/check-star.svg" alt="check star" title="check star" /> Wir sind 100% unabhängig</div>
+                </div>
+            </div>
+            <div class="user-panel">
+                <div data-notifications class="gifts">
+                    <div data-notifications-open class="gifts__icon">
+                        <picture>
+                            <source srcset="images/header/gift-mobile.svg" media="(max-width: 576px)" />
+                            <img loading="lazy" src="images/header/gift.svg" alt="gift" title="gift" />
+                        </picture>
+                        <span class="gifts__count"></span>
+                    </div>
+                    <div data-notifications-body class="gifts__body">
+                        <b class="gifts__title">Exclusive Bonus</b>
+                        <div data-notifications-close class="gifts__close"><span></span><span></span></div>
+                        <ul>
+                            <li class="side-casino side-casino_gift">
+                                <div class="side-casino__logo">
+                                    <img src="images/top3/pino.svg" alt="pino" title="pino" />
+                                </div>
+                                <div class="side-casino__bonus">10€ einzahlen und 30€ Bonus erhalten</div>
+                                <button onclick="window.open('','_blank')" class="side-casino__btn btn"><span class="icon-arrow-more"></span></button>
+                            </li>
+                            <li class="side-casino side-casino_gift">
+                                <div class="side-casino__logo">
+                                    <img src="images/top3/betfair.svg" alt="betfair" title="betfair" />
+                                </div>
+                                <div class="side-casino__bonus">10€ einzahlen und 30€ Bonus erhalten</div>
+                                <button onclick="window.open('','_blank')" class="side-casino__btn btn"><span class="icon-arrow-more"></span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="user-panel__links">
+                    <li>
+                        <a href="#" class="site-header__question"
+                            ><svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" width="24" height="24" rx="12" fill="white" />
+                                <path
+                                    d="M12.5559 6.28C13.3133 6.28 13.9853 6.392 14.5719 6.616C15.1586 6.84 15.6173 7.17067 15.9479 7.608C16.2786 8.03467 16.4439 8.56267 16.4439 9.192C16.4439 9.832 16.3053 10.36 16.0279 10.776C15.7613 11.1813 15.3986 11.4907 14.9399 11.704C14.4813 11.9067 13.9746 12.04 13.4199 12.104L13.3079 13.608H11.3079L11.3239 11.192C12.0386 11.1067 12.5933 10.9947 12.9879 10.856C13.3933 10.7067 13.6759 10.52 13.8359 10.296C14.0066 10.072 14.0919 9.80533 14.0919 9.496C14.0919 9.19733 14.0279 8.94667 13.8999 8.744C13.7826 8.54133 13.6013 8.38667 13.3559 8.28C13.1106 8.17333 12.7959 8.12 12.4119 8.12C11.8573 8.12 11.4146 8.28 11.0839 8.6C10.7533 8.90933 10.5506 9.352 10.4759 9.928L8.39594 9.128C8.52394 8.57333 8.7586 8.08267 9.09994 7.656C9.44127 7.21867 9.8946 6.88267 10.4599 6.648C11.0359 6.40267 11.7346 6.28 12.5559 6.28ZM12.3319 14.68C12.7479 14.68 13.0786 14.792 13.3239 15.016C13.5693 15.24 13.6919 15.5387 13.6919 15.912C13.6919 16.296 13.5693 16.6 13.3239 16.824C13.0786 17.0373 12.7479 17.144 12.3319 17.144C11.9159 17.144 11.5853 17.0373 11.3399 16.824C11.0946 16.6 10.9719 16.296 10.9719 15.912C10.9719 15.5387 11.0946 15.24 11.3399 15.016C11.5853 14.792 11.9159 14.68 12.3319 14.68Z"
+                                    fill="#1A1A27"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="<?= $host_url; ?>/uber-uns/">Uber Uns</a></li>
+                </ul>
+                <div data-notifications class="notifications">
+                    <div data-notifications-open class="notifications__icon active">
+                        <img loading="lazy" src="images/icons/notification.svg" alt="notification" title="notification" />
+                    </div>
+                    <div data-notifications-body class="notifications__body">
+                        <div data-notifications-close class="notifications__close"><span></span><span></span></div>
+                        <b class="notifications__title">What’s new</b>
+                        <ul class="notifications__list">
+                            <li>
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/01.jpg" alt="01" title="01" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Neosurf Ticket kaufen Österreich</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/02.jpg" alt="02" title="02" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Neosurf Ticket kaufen Österreich</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/03.jpg" alt="03" title="03" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Kaufen Sie Jeton Cash in der Schweiz 2022</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="hidden">
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/03.jpg" alt="03" title="03" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Kaufen Sie Jeton Cash in der Schweiz 2022</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="hidden">
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/03.jpg" alt="03" title="03" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Kaufen Sie Jeton Cash in der Schweiz 2022</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <button class="notifications__more" data-open="View all" data-close="Zeige weniger">View all</button>
+                    </div>
+                </div>
+                <button class="burger-menu">
+                    <span class="open">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.875 7.12549H4.12501" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M19.875 12H10.125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M19.875 16.874H7.125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <span class="close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.34493 1.69509L16.5253 16.66" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1.47489 16.305L16.6552 1.34003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="lang mobile-hidden">
+                <div class="lang-current">
+                    <span>DE</span>
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.21967 0.21967C0.512563 -0.0732233 0.987437 -0.0732233 1.28033 0.21967L5.25 4.18934L9.21967 0.21967C9.51256 -0.0732233 9.98744 -0.0732233 10.2803 0.21967C10.5732 0.512563 10.5732 0.987437 10.2803 1.28033L5.78033 5.78033C5.48744 6.07322 5.01256 6.07322 4.71967 5.78033L0.21967 1.28033C-0.0732233 0.987437 -0.0732233 0.512563 0.21967 0.21967Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+                <ul class="lang-select">
+                    <li>
+                        <a href="<?= $host_url; ?>/fr/casino-en-ligne/"> FR </a>
+                    </li>
+                    <li>
+                        <a href="<?= $host_url; ?>/en/online-casinos/"> EN </a>
+                    </li>
+                    <li>
+                        <a href="<?= $host_url; ?>/it/casino-online/"> IT </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-header__bottom">
+            <div class="site-header__user-mobile">
+                <ul>
+                    <li>
+                        <a href="#" class="site-header__question"
+                            ><svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" width="24" height="24" rx="12" fill="white" />
+                                <path
+                                    d="M12.5559 6.28C13.3133 6.28 13.9853 6.392 14.5719 6.616C15.1586 6.84 15.6173 7.17067 15.9479 7.608C16.2786 8.03467 16.4439 8.56267 16.4439 9.192C16.4439 9.832 16.3053 10.36 16.0279 10.776C15.7613 11.1813 15.3986 11.4907 14.9399 11.704C14.4813 11.9067 13.9746 12.04 13.4199 12.104L13.3079 13.608H11.3079L11.3239 11.192C12.0386 11.1067 12.5933 10.9947 12.9879 10.856C13.3933 10.7067 13.6759 10.52 13.8359 10.296C14.0066 10.072 14.0919 9.80533 14.0919 9.496C14.0919 9.19733 14.0279 8.94667 13.8999 8.744C13.7826 8.54133 13.6013 8.38667 13.3559 8.28C13.1106 8.17333 12.7959 8.12 12.4119 8.12C11.8573 8.12 11.4146 8.28 11.0839 8.6C10.7533 8.90933 10.5506 9.352 10.4759 9.928L8.39594 9.128C8.52394 8.57333 8.7586 8.08267 9.09994 7.656C9.44127 7.21867 9.8946 6.88267 10.4599 6.648C11.0359 6.40267 11.7346 6.28 12.5559 6.28ZM12.3319 14.68C12.7479 14.68 13.0786 14.792 13.3239 15.016C13.5693 15.24 13.6919 15.5387 13.6919 15.912C13.6919 16.296 13.5693 16.6 13.3239 16.824C13.0786 17.0373 12.7479 17.144 12.3319 17.144C11.9159 17.144 11.5853 17.0373 11.3399 16.824C11.0946 16.6 10.9719 16.296 10.9719 15.912C10.9719 15.5387 11.0946 15.24 11.3399 15.016C11.5853 14.792 11.9159 14.68 12.3319 14.68Z"
+                                    fill="#1A1A27"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="<?= $host_url; ?>/uber-uns/">Uber Uns</a></li>
+                </ul>
+                <div class="lang">
+                    <div class="lang-current">
+                        <span>DE</span>
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M0.21967 0.21967C0.512563 -0.0732233 0.987437 -0.0732233 1.28033 0.21967L5.25 4.18934L9.21967 0.21967C9.51256 -0.0732233 9.98744 -0.0732233 10.2803 0.21967C10.5732 0.512563 10.5732 0.987437 10.2803 1.28033L5.78033 5.78033C5.48744 6.07322 5.01256 6.07322 4.71967 5.78033L0.21967 1.28033C-0.0732233 0.987437 -0.0732233 0.512563 0.21967 0.21967Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <ul class="lang-select">
+                        <li><a href="<?= $host_url; ?>/fr/casino-en-ligne/">FR</a></li>
+                        <li><a href="<?= $host_url; ?>/en/online-casinos/">EN</a></li>
+                        <li><a href="<?= $host_url; ?>/it/casino-online/">IT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="dropdown">
+                        <a href="/online-casinos/"
+                            >Online Casinos<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/online-casinos/legal/">Legal Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/mobile/">Mobile Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/echtgeld/">Echtgeld Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/neu/">Neue Casinos</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/live/">Live Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/ausland/">Ausland Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/bonus/">Casino Bonus</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/high-roller/">High Roller Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/serioese/">Seriöses Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/chf/">Casinos mit Schweizer Franken</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="<?= $host_url; ?>/online-casinos/zahlungmethoden/"
+                            >Zahlungmethoden<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/online-casinos/casino-mit-handyrechnung/">Handyrechnung bezahlen</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/paysafe/">Paysafecard</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/twint/">Twint</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/neosurf/">Neosurf</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/ecopayz/">EcoPayz</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/skrill/">Skrill</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/postfinance/">Postfinance</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/sofortueberweisung/">Sofort</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/jeton/">Jeton</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/lastschrift/">Lastschrift</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/litecoin/">Litecoin</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/ethereum/">Ethereum</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/dogecoin/">Dogecoin</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/apple-pay/">Apple Pay</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/google-pay/">Google Pay</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/mifinity/">MiFinity</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/bitcoin/">Bitcoin</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/paypal/">PayPal</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/visa/">Visa</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/neteller/">Neteller</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/cashlib/">Cashlib</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/flexepin/">Flexepin</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/mastercard/">Mastercard</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/sportwetten/"
+                            >Sportwetten<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/sportwetten/fussball/">Fussball Wetten</a></li>
+                            <li><a href="<?= $host_url; ?>/sportwetten/bonus/">Wetten Bonus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="<?= $host_url; ?>/bingo/">Bingo</a></li>
+                    <li class="dropdown">
+                        <a href="<?= $host_url; ?>/poker/"
+                            >Online Poker<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/poker/pokerstars/">Pokerstars Erfahrungen</a></li>
+                            <li><a href="<?= $host_url; ?>/poker/bonus/">Online Poker Bonus</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/casino-verzeichnis/"
+                            >Casino Tests<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/online-casinos/goodman-casino/">Goodman Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/bizzo-casino/">Bizzo Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/20bet-casino/">20Bet Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/euslot-casino/">EUslot Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/playamo-casino/">Playamo Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/turbico-casino/">Turbico Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/wild-fortune-casino/">Wild Fortune Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/national-casino/">National Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/gslot-casino/">GSlot Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/levelup-casino/">Levelup Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/rolling-slots/">Rolling Slots</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"
+                            >DACH<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/online-casinos/oesterreich/">Österreich Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/deutschland/">Deutschland Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/liechtenstein/">Liechtenstein Casino</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="<?= $host_url; ?>/blog/"
+                            >Blog<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/blog/spielsperre-aufheben-schweiz/">Spielsperre aufheben Schweiz</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/paysafecard-kaufen-schweiz/">Paysafecard Kaufen Schweiz</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/was-genau-sind-mobile-spielautomaten/">Was genau sind mobile Spielautomaten</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/neosurf-kaufen-schweiz/">Neosurf kaufen in der Schweiz 2022</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/glucksrad-online/">Online Glücksrad – eines der einfachsten Glücksspiele</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/jeton-cash/">Kaufen Sie Jeton Cash in der Schweiz 2022</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/casino-gewinne-versteuern-schweiz/">Online Casino Gewinn Steuern Schweiz 2022: Bedingungen und Voraussetzungen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="site-header__search">
+                <span class="icon-loop"></span>
+                <form action="#" class="form form_search">
+                    <div class="form__item">
+                        <input data-search class="form__input" id="search" name="search" type="search" placeholder="Enter casiono name, slots, ..." />
+                    </div>
+                    <button><span class="icon-loop"></span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="page">
+                <article>
+                    <section class="hero">
+    <div class="hero__wrapper">
+        <div class="container">
+            <div class="hero__body">
+                <h1>
+                    Gambling Information, Reviews<br />
+                    & OnlineCasino Insights You Can Trust
+                </h1>
+                <p>Vigiswiss.ch is the leading destination to find the safest regulated online casinos reviewed by experts to the best gambling guides</p>
+                <form action="#" class="form form_search">
+                    <div class="form__item form__item_search">
+                        <input data-search class="form__input form__input_transparent" id="search" name="search" type="search" placeholder="Enter casiono name, slots, bonuses..." />
+                    </div>
+                    <button class="btn">Search</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="hero__relinks">
+        <div class="container">
+            <div class="relinks">
+                <a href="#" class="relink">
+                    <object type="image/svg+xml" data="images/icons/relinkings/01.svg">
+                    </object>
+                    <div class="relink__title">Legal Casinos</div>
+                </a>
+                <a href="#" class="relink">
+                    <img src="images/icons/relinkings/02.svg" alt="02" title="02" class="relink__icon relink__icon-red" />
+                    <div class="relink__title">Casino Boni</div>
+                </a>
+                <a href="#" class="relink">
+                    <img src="images/icons/relinkings/03.svg" alt="03" title="03" class="relink__icon relink__icon-green" />
+                    <div class="relink__title">Casino Spiele</div>
+                </a>
+                <a href="#" class="relink">
+                    <img src="images/icons/relinkings/04.svg" alt="04" title="04" class="relink__icon relink__icon-orange" />
+                    <div class="relink__title">Casino Tests</div>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="verify">
+    <div class="container">
+        <div class="verify__body">
+            <div class="verify__content">
+                <h2>Alle Online-Casinos im Test</h2>
+                <p>Wir überprüfen alle existierenden Online-Casinos, egal, ob es diesen gefällt oder nicht.</p>
+                <div class="verify__spoilers">
+                    <div class="spoiler">
+                        <button class="spoiler__btn">
+                            <img src="images/icons/green-chip.svg" alt="green chip" title="green chip" /> Wir finden die neuesten Online-Casinos <span class="icon-arrow-more"></span>
+                        </button>
+                        <div class="spoiler__content">
+                            <p>
+                                Wir suchen ständig nach <a href="#">neu eröffneten Casino-Webseiten</a>, die anschließend von uns bewertet werden. Nur so können wir unseren Besuchern die besten
+                                Auswahlmöglichkeiten anbieten.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="spoiler">
+                        <button class="spoiler__btn">
+                            <img src="images/icons/green-chip.svg" alt="green chip" title="green chip" /> Wir liefern exakt Informationen zu jedem einzelnen Casino <span class="icon-arrow-more"></span>
+                        </button>
+                        <div class="spoiler__content">
+                            <p>
+                                Wir suchen ständig nach <a href="#">neu eröffneten Casino-Webseiten</a>, die anschließend von uns bewertet werden. Nur so können wir unseren Besuchern die besten
+                                Auswahlmöglichkeiten anbieten.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="spoiler">
+                        <button class="spoiler__btn">
+                            <img src="images/icons/green-chip.svg" alt="green chip" title="green chip" /> Unser unabhängiges Analyseteam und Methoden <span class="icon-arrow-more"></span>
+                        </button>
+                        <div class="spoiler__content">
+                            <p>
+                                Wir suchen ständig nach <a href="#">neu eröffneten Casino-Webseiten</a>, die anschließend von uns bewertet werden. Nur so können wir unseren Besuchern die besten
+                                Auswahlmöglichkeiten anbieten.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="top3">
+                <div class="top3__body">
+                    <div class="top3__title"><img src="images/icons/award.svg" alt="award" title="award" /> Top 3 der besten Casinos</div>
+                    <ol>
+                        <li class="side-casino side-casino--top3">
+                            <div class="side-casino__logo">
+                                <img src="images/top3/pino.svg" alt="pino" title="pino" />
+                            </div>
+                            <div class="side-casino__bonus">10€ einzahlen und 30€ Bonus erhalten</div>
+                            <button onclick="window.open('','_blank')" class="side-casino__btn btn"><span class="icon-arrow-more"></span></button>
+                        </li>
+                        <li class="side-casino side-casino--top3">
+                            <div class="side-casino__logo">
+                                <img src="images/top3/betfair.svg" alt="betfair" title="betfair" />
+                            </div>
+                            <div class="side-casino__bonus">10€ einzahlen und 30€ Bonus erhalten</div>
+                            <button onclick="window.open('','_blank')" class="side-casino__btn btn"><span class="icon-arrow-more"></span></button>
+                        </li>
+                        <li class="side-casino side-casino--top3">
+                            <div class="side-casino__logo">
+                                <img src="images/top3/casinomax.svg" alt="casinomax" title="casinomax" />
+                            </div>
+                            <div class="side-casino__bonus">10€ einzahlen und 30€ Bonus erhalten</div>
+                            <button onclick="window.open('','_blank')" class="side-casino__btn btn"><span class="icon-arrow-more"></span></button>
+                        </li>
+                    </ol>
+                    <a href="#" class="top3__more">More Casinos <span class="icon-arrow-right"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="violet-section">
+    <div class="violet-section__wrapper free-games">
+        <div class="container">
+            <div class="free-games__body">
+                <div class="free-games__content">
+                    <h2>Kostenlose Spiele, Spaßfaktor garantiert!</h2>
+                    <p>
+                        Vigiswiss.ch ist eine Plattform von Spielern für Spieler, deren erklärtes Ziel es ist, das Spielerlebnis unserer Leser zu 100 % sicher und erfolgreich zu machen. Wir helfen
+                        Ihnen dabei, die besten Online Casinos zu finden. Daneben unterstützen wir Sie aber auch bei der Auswahl der richtigen Spiele mit den besten Gewinnchancen, helfen Spielern aus
+                        Deutschland, Österreich und Deutschland mit kostenlosen Casino Games, Strategien, Tipps und Tricks erfolgreicher mit echtem Geld zu spielen.
+                    </p>
+                </div>
+                <div class="free-games__relinks">
+                    <div class="relinks">
+                        <a href="#" class="relink">
+                            <img src="images/icons/relinkings/05.svg" alt="05" title="05" class="relink__icon relink__icon-violet" />
+                            <div class="relink__title">Online Casinos</div>
+                        </a>
+                        <a href="#" class="relink">
+                            <img src="images/icons/relinkings/06.svg" alt="06" title="06" class="relink__icon relink__icon-violet" />
+                            <div class="relink__title">Online Poker</div>
+                        </a>
+                        <a href="#" class="relink">
+                            <img src="images/icons/relinkings/07.svg" alt="07" title="07" class="relink__icon relink__icon-violet" />
+                            <div class="relink__title">Sportwetten</div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="free-games__poker">
+            <picture>
+                <source srcset="images/free-games/poker-mobile.png" media="(max-width: 768px)" />
+                <img src="images/free-games/poker.png" alt="poker" title="poker" />
+            </picture>
+        </div>
+        <div class="free-games__basketball">
+            <picture>
+                <source srcset="images/free-games/basketball-mobile.png" media="(max-width: 768px)" />
+                <img src="images/free-games/basketball.png" alt="basketball" title="basketball" />
+            </picture>
+        </div>
+        <div class="free-games__cube">
+            <picture>
+                <source srcset="images/free-games/cube-mobile.png" media="(max-width: 768px)" />
+                <img src="images/free-games/cube.png" alt="cube" title="cube" />
+            </picture>
+        </div>
+    </div>
+</section>
+ <section class="pink-section">
+    <div class="safe">
+        <div class="container">
+            <h2>Warum sollte man uns vertrauen?</h2>
+            <div class="safe__body">
+                <ul class="safe__items">
+                    <li class="item-safe">
+                        <div class="item-safe__icon">
+                            <img src="images/safe/01.svg" alt="01" title="01" />
+                        </div>
+                        <div class="item-safe__content">
+                            <div class="item-safe__title">Wer Vigiswiss ist und warum Sie uns vertrauen können?</div>
+                            <p>Unsere Liste der Gaming-Websites enthält die besten Willkommensbonusangebote und viele andere Werbeaktionen, die Sie sicherlich attraktiv finden werden.</p>
+                        </div>
+                    </li>
+                    <li class="item-safe">
+                        <div class="item-safe__icon">
+                            <img src="images/safe/02.svg" alt="02" title="02" />
+                        </div>
+                        <div class="item-safe__content">
+                            <div class="item-safe__title">Auf Vigiswiss finden Sie die besten Glücksspielangebote</div>
+                            <p>Unsere Liste der Gaming-Websites enthält die besten Willkommensbonusangebote und viele andere Werbeaktionen, die Sie sicherlich attraktiv finden werden.</p>
+                        </div>
+                    </li>
+                    <li class="item-safe">
+                        <div class="item-safe__icon">
+                            <img src="images/safe/03.svg" alt="03" title="03" />
+                        </div>
+
+                        <div class="item-safe__content">
+                            <div class="item-safe__title">Vigiswiss bietet Expertenbewertungen von Casinomarken</div>
+                            <p>Unsere Liste der Gaming-Websites enthält die besten Willkommensbonusangebote und viele andere Werbeaktionen, die Sie sicherlich attraktiv finden werden.</p>
+                        </div>
+                    </li>
+                    <li class="item-safe">
+                        <div class="item-safe__icon">
+                            <img src="images/safe/04.svg" alt="04" title="04" />
+                        </div>
+                        <div class="item-safe__content">
+                            <div class="item-safe__title">Vigiswiss ist Sicherheit für die Spieler</div>
+                            <p>Unsere Liste der Gaming-Websites enthält die besten Willkommensbonusangebote und viele andere Werbeaktionen, die Sie sicherlich attraktiv finden werden.</p>
+                        </div>
+                    </li>
+                </ul>
+                <div class="safe__img">
+                    <img src="images/safe/safe.png" alt="safe" title="safe" />
+                </div>
+            </div>
+        </div>
+        <div class="safe__pseudo">
+            <picture>
+                <source srcset="images/safe/shield-mobile.png" media="(max-width: 1200px)" />
+                <img src="images/safe/shield.png" alt="Shield" title="Shield" />
+            </picture>
+        </div>
+    </div>
+</section>
+
+                    <section>
+    <div class="container">
+        <h2>Wie überprüfen wir Online-Glücksspielseiten?</h2>
+        <div class="check">
+            <div class="check__item">
+                <div class="check__icon">
+                    <img loading="lazy" src="images/icons/benefits/game-variety.svg" alt="game variety" title="game variety" />
+                </div>
+                <b>Game Variety</b>
+                <p>
+                    A key area with any betting operator across Casino gaming or Sports betting is choice. Knowing different types of games and markets is crucial when deciding to sign up to one of
+                    the many gaming sites you will come across online. We focus our efforts across the following areas when considering the content of our reviews, guides and eventually our
+                    recommendations. Knowing different types of games and markets is crucial when deciding to sign up to one of the many gaming sites you will come across online.
+                </p>
+                <div class="check__pseudo">
+                    <img loading="lazy" src="images/verify/01.png" alt="01" title="01" />
+                </div>
+            </div>
+            <div class="check__item">
+                <div class="check__icon">
+                    <img loading="lazy" src="images/icons/benefits/welcome.svg" alt="welcome" title="welcome" />
+                </div>
+
+                <b>Bonus/Welcome Offers</b>
+                <p>
+                    A key area with any betting operator across Casino gaming or Sports betting is choice. Knowing different types of games and markets is crucial when deciding to sign up to one of
+                    the many gaming sites you will come across online. We focus our efforts across the following areas when considering the content of our reviews, guides and eventually our
+                    recommendations. Knowing different types of games and markets is crucial when deciding to sign up to one of the many gaming sites you will come across online.
+                </p>
+
+                <div class="check__pseudo">
+                    <img loading="lazy" src="images/verify/02.png" alt="02" title="02" />
+                </div>
+            </div>
+            <div class="check__item">
+                <div class="check__icon">
+                    <img loading="lazy" src="images/icons/benefits/reliability.svg" alt="reliability" title="reliability" />
+                </div>
+
+                <b>Reliability of payments</b>
+                <p>
+                    A key area with any betting operator across Casino gaming or Sports betting is choice. Knowing different types of games and markets is crucial when deciding to sign up to one of
+                    the many gaming sites you will come across online. We focus our efforts across the following areas when considering the content of our reviews, guides and eventually our
+                    recommendations. Knowing different types of games and markets is crucial when deciding to sign up to one of the many gaming sites you will come across online.
+                </p>
+
+                <div class="check__pseudo">
+                    <img loading="lazy" src="images/verify/03.png" alt="03" title="03" />
+                </div>
+            </div>
+            <div class="check__item">
+                <div class="check__icon">
+                    <img loading="lazy" src="images/icons/benefits/safety.svg" alt="safety" title="safety" />
+                </div>
+
+                <b>Safety and Security</b>
+                <p>
+                    A key area with any betting operator across Casino gaming or Sports betting is choice. Knowing different types of games and markets is crucial when deciding to sign up to one of
+                    the many gaming sites you will come across online. We focus our efforts across the following areas when considering the content of our reviews, guides and eventually our
+                    recommendations. Knowing different types of games and markets is crucial when deciding to sign up to one of the many gaming sites you will come across online.
+                </p>
+
+                <div class="check__pseudo">
+                    <img loading="lazy" src="images/verify/04.png" alt="04" title="04" />
+                </div>
+            </div>
+            <div class="check__item">
+                <div class="check__icon">
+                    <img loading="lazy" src="images/icons/benefits/support.svg" alt="support" title="support" />
+                </div>
+
+                <b>Customer Support</b>
+                <p>
+                    A key area with any betting operator across Casino gaming or Sports betting is choice. Knowing different types of games and markets is crucial when deciding to sign up to one of
+                    the many gaming sites you will come across online. We focus our efforts across the following areas when considering the content of our reviews, guides and eventually our
+                    recommendations. Knowing different types of games and markets is crucial when deciding to sign up to one of the many gaming sites you will come across online.
+                </p>
+                <div class="check__pseudo">
+                    <img loading="lazy" src="images/verify/05.png" alt="05" title="05" />
+                </div>
+            </div>
+            <div class="check__item">
+                <div class="check__icon">
+                    <img loading="lazy" src="images/icons/benefits/mobile-app.svg" alt="mobile app" title="mobile app" />
+                </div>
+
+                <b>Mobile App Experience</b>
+                <p>
+                    A key area with any betting operator across Casino gaming or Sports betting is choice. Knowing different types of games and markets is crucial when deciding to sign up to one of
+                    the many gaming sites you will come across online. We focus our efforts across the following areas when considering the content of our reviews, guides and eventually our
+                    recommendations. Knowing different types of games and markets is crucial when deciding to sign up to one of the many gaming sites you will come across online.
+                </p>
+
+                <div class="check__pseudo">
+                    <img loading="lazy" src="images/verify/06.png" alt="06" title="06" />
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="pink-section reviews">
+    <div class="reviews__body">
+        <div class="reviews__content">
+            <h2>
+                Online Casino Erfahrungen<br />
+                von Lesern wie Ihnen
+            </h2>
+            <p>
+                Auf Vigiswiss.ch geben wir Ihnen die Möglichkeit Ihre Online Casino Erfahrungen mit anderen Spielern zu teilen und ebenfalls vom Feedback anderer Spieler zu profitieren. Ihre Meinung
+                ist uns wichtig.
+            </p>
+            <div class="reviews__navigation">
+                <div class="reviews__count"></div>
+                <div class="reviews__scrollbar swiper-scrollbar"></div>
+                <div class="reviews__arrows">
+                    <div class="reviews__prev swiper-button-prev"><span class="icon-arrow-more"></span></div>
+                    <div class="reviews__next swiper-button-next"><span class="icon-arrow-more"></span></div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper reviews-slider">
+            <div class="swiper-wrapper reviews-slider__wrapper">
+                <div class="swiper-slide reviews-slider__slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__icon">
+                                <img loading="lazy" src="images/reviews/michael.jpg" alt="michael" title="michael" />
+                            </div>
+                            <div class="review__about">
+                                <b>Michael Sanders</b>
+                                <a class="review__social">
+                                    <img loading="lazy" src="images/icons/twitter.svg" alt="twitter" title="twitter" />
+                                    @Michael Sanders
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <b>Only the best!</b>
+                            <p>
+                                Surprised to learn I could use a visa gift to make an online casino deposit. Always the best, I wont buy any of my headphone gear anywhere else, thank you again for all
+                                of your help and putting up with all my questions.
+                            </p>
+                        </div>
+                        <div class="review__bottom">
+                            <div class="review__rating">
+                                <img loading="lazy" src="images/icons/stars.svg" alt="stars" title="stars" />
+                            </div>
+                            <div class="review__date">30.11.2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide reviews-slider__slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__icon">
+                                <img loading="lazy" src="images/reviews/michael.jpg" alt="michael" title="michael" />
+                            </div>
+                            <div class="review__about">
+                                <b>Michael Sanders</b>
+                                <a class="review__social">
+                                    <img loading="lazy" src="images/icons/twitter.svg" alt="twitter" title="twitter" />
+                                    @Michael Sanders
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <b>Only the best!</b>
+                            <p>
+                                Surprised to learn I could use a visa gift to make an online casino deposit. Always the best, I wont buy any of my headphone gear anywhere else, thank you again for all
+                                of your help and putting up with all my questions.
+                            </p>
+                        </div>
+                        <div class="review__bottom">
+                            <div class="review__rating">
+                                <img loading="lazy" src="images/icons/stars.svg" alt="stars" title="stars" />
+                            </div>
+                            <div class="review__date">30.11.2022</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide reviews-slider__slide">
+                    <div class="review">
+                        <div class="review__header">
+                            <div class="review__icon">
+                                <img loading="lazy" src="images/reviews/michael.jpg" alt="michael" title="michael" />
+                            </div>
+                            <div class="review__about">
+                                <b>Michael Sanders</b>
+                                <a class="review__social">
+                                    <img loading="lazy" src="images/icons/twitter.svg" alt="twitter" title="twitter" />
+                                    @Michael Sanders
+                                </a>
+                            </div>
+                        </div>
+                        <div class="review__content">
+                            <b>Only the best!</b>
+                            <p>
+                                Surprised to learn I could use a visa gift to make an online casino deposit. Always the best, I wont buy any of my headphone gear anywhere else, thank you again for all
+                                of your help and putting up with all my questions.
+                            </p>
+                        </div>
+                        <div class="review__bottom">
+                            <div class="review__rating">
+                                <img loading="lazy" src="images/icons/stars.svg" alt="stars" title="stars" />
+                            </div>
+                            <div class="review__date">30.11.2022</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination reviews-slider__bullets"></div>
+        </div>
+    </div>
+    <div class="reviews__pseudo">
+        <img loading="lazy" src="images/reviews/chat.png" alt="chat" title="chat" />
+    </div>
+</section>
+ <section>
+    <div class="container">
+        <h2>Stay up to date with the industry latest</h2>
+        <p>
+            Wir haben gemerkt, dass es auch für unsere Leser langsam schwierig wird ein gutes Schweizer Online Casino zu finden. Aus diesem Grund habe ich dutzende Casinos getestet, um hier die
+            aktuellsten und besten Informationen an den Leser weiterzugeben.
+        </p>
+        <div class="latest-articles">
+            <a href="#" class="more">Lesen Sie alle Blogbeiträge <span class="icon-arrow-right"></span></a>
+            <div class="latest-articles__wrapper">
+                <div class="latest-articles__body">
+                    <article class="latest-article">
+                        <div class="latest-article__img">
+                            <img loading="lazy" src="images/latest-articles/01.jpg" alt="01" title="01" />
+                        </div>
+                        <div class="latest-article__content">
+                            <h4><a href="#">Paysafecard Kaufen Schweiz</a></h4>
+                            <p>Wenn Sie überlegen, dass eine Paysafecard kaufen, Schweiz hat vorteilhafte Möglichkeiten. Unsere Experten, die sich seit vielen Jahren mit Online...</p>
+                            <div class="article-info">
+                                <a href="#"> Torsten Schulz </a>
+                                <p>Oktober 13, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="latest-article">
+                        <div class="latest-article__img">
+                            <img loading="lazy" src="images/latest-articles/02.jpg" alt="02" title="02" />
+                        </div>
+                        <div class="latest-article__content">
+                            <h4><a href="#">Online Casino Konzession worauf achten</a></h4>
+                            <div class="article-info">
+                                <a href="#"> Torsten Schulz </a>
+                                <p>Oktober 13, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="latest-article">
+                        <div class="latest-article__img">
+                            <img loading="lazy" src="images/latest-articles/03.jpg" alt="03" title="03" />
+                        </div>
+                        <div class="latest-article__content">
+                            <h4><a href="#">Was genau sind mobile Spielautomaten</a></h4>
+                            <div class="article-info">
+                                <a href="#"> Torsten Schulz </a>
+                                <p>Oktober 13, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+                <aside class="latest-articles__aside">
+                    <article class="side-article">
+                        <div class="side-article__img">
+                            <img loading="lazy" src="images/latest-articles/side/01.jpg" alt="01" title="01" />
+                        </div>
+                        <div class="side-article__content">
+                            <h4><a href="#">Neosurf Ticket kaufen Österreich</a></h4>
+                            <div class="article-info">
+                                <a href="#"> Torsten Schulz </a>
+                                <p>Oktober 13, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="side-article">
+                        <div class="side-article__img">
+                            <img loading="lazy" src="images/latest-articles/side/without.jpg" alt="without" title="without" />
+                        </div>
+                        <div class="side-article__content">
+                            <h4><a href="#">Neosurf kaufen in der Schweiz 2022</a></h4>
+                            <div class="article-info">
+                                <a href="#"> Torsten Schulz </a>
+                                <p>Oktober 13, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="side-article">
+                        <div class="side-article__img">
+                            <img loading="lazy" src="images/latest-articles/side/03.jpg" alt="03" title="03" />
+                        </div>
+                        <div class="side-article__content">
+                            <h4><a href="#">Online Glücksrad – eines der einfachsten Glücksspiele</a></h4>
+                            <div class="article-info">
+                                <a href="#"> Torsten Schulz </a>
+                                <p>Oktober 13, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="side-article">
+                        <div class="side-article__img">
+                            <img loading="lazy" src="images/latest-articles/side/04.jpg" alt="04" title="04" />
+                        </div>
+                        <div class="side-article__content">
+                            <h4><a href="#">Neosurf kaufen in der Schweiz 2022</a></h4>
+                            <div class="article-info">
+                                <a href="#"> Torsten Schulz </a>
+                                <p>Oktober 13, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                    <article class="side-article">
+                        <div class="side-article__img">
+                            <img loading="lazy" src="images/latest-articles/side/05.jpg" alt="05" title="05" />
+                        </div>
+                        <div class="side-article__content">
+                            <h4><a href="#">Ripple kaufen</a></h4>
+                            <div class="article-info">
+                                <a href="#"> Torsten Schulz </a>
+                                <p>Oktober 13, 2021</p>
+                            </div>
+                        </div>
+                    </article>
+                </aside>
+            </div>
+        </div>
+    </div>
+</section>
+ <section class="violet-section call-to">
+    <div class="violet-section__wrapper">
+        <div class="container">
+            <div class="call-to__body">
+                <h2>Exclusive casino bonus offers & expert tips</h2>
+                <p>Stay ahead of the game! Sign up now to get the inside scoop on the latest bonus offers.</p>
+                <form action="#" class="form">
+                    <div class="form__item">
+                        <input class="form__input form__input_transparent" name="email" type="email" placeholder="Enter E-mail" />
+                    </div>
+                    <button data-open-modal="send" class="btn">Get your bonus</button>
+                    <p class="form__undertext">By clicking “Get your bonus” you agree to Vigiswiss Privacy Policy and consent to Vigiswiss using your contact data for newsletter purposes</p>
+                </form>
+            </div>
+        </div>
+        <div class="call-to__pseudo">
+            <picture>
+                <source srcset="images/cta/after-mobile.png" media="(max-width: 1200px)" />
+                <img loading="lazy" src="images/cta/after.png" alt="after" title="after" />
+            </picture>
+        </div>
+    </div>
+</section>
+
+                    <section class="faq">
+    <div class="container">
+        <div class="faq__body">
+            <div class="faq__left">
+                <h2>
+                    Die Häufigste Fragen<br />
+                    & Antworten Über Online Casinos
+                </h2>
+                <img class="faq__img" loading="lazy" src="images/faq/question.png" alt="question" title="question" />
+            </div>
+            <div class="faq__spoilers">
+                <div class="spoiler spoiler_faq">
+                    <button class="spoiler__btn"><img loading="lazy" src="images/icons/clip.svg" alt="clip" title="clip" /> Was ist Vigiswiss? <span class="icon-arrow-more"></span></button>
+                    <div class="spoiler__content">
+                        <p>
+                            At Casino.org, we take our casino reviews very seriously, providing our readers with highly credible casino information that’s unrivaled on detail. To ensure we only
+                            recommend sites of the highest quality, we’ve developed a comprehensive set of criteria that casinos must meet. On this page, we’ll take you through each of the 25-steps in
+                            our process, so you can see both what it is we’re looking for and how we put each casino to the test.
+                        </p>
+                        <p>
+                            At any point, players use real money to gamble with. When a player wins, they are repaid with real money that can be withdrawn as long as it exceeds the casino site’s
+                            minimum withdrawal amount. If a player is in a position where they have won <a href="#">bonus money</a>, real money will still be used first. Once those funds are finished,
+                            only then will bonus money be used to continue playing.
+                        </p>
+                    </div>
+                </div>
+                <div class="spoiler spoiler_faq">
+                    <button class="spoiler__btn">
+                        <img loading="lazy" src="images/icons/clip.svg" alt="clip" title="clip" /> Wie kann ich das Vigiswiss-Team kontaktieren? <span class="icon-arrow-more"></span>
+                    </button>
+                    <div class="spoiler__content">
+                        <p>
+                            At Casino.org, we take our casino reviews very seriously, providing our readers with highly credible casino information that’s unrivaled on detail. To ensure we only
+                            recommend sites of the highest quality, we’ve developed a comprehensive set of criteria that casinos must meet. On this page, we’ll take you through each of the 25-steps in
+                            our process, so you can see both what it is we’re looking for and how we put each casino to the test.
+                        </p>
+                        <p>
+                            At any point, players use real money to gamble with. When a player wins, they are repaid with real money that can be withdrawn as long as it exceeds the casino site’s
+                            minimum withdrawal amount. If a player is in a position where they have won <a href="#">bonus money</a>, real money will still be used first. Once those funds are finished,
+                            only then will bonus money be used to continue playing.
+                        </p>
+                    </div>
+                </div>
+                <div class="spoiler spoiler_faq">
+                    <button class="spoiler__btn">
+                        <img loading="lazy" src="images/icons/clip.svg" alt="clip" title="clip" /> Warum sollten Sie sich für ein Online-Casino bei Vigiswiss entscheiden?
+                        <span class="icon-arrow-more"></span>
+                    </button>
+                    <div class="spoiler__content">
+                        <p>
+                            At Casino.org, we take our casino reviews very seriously, providing our readers with highly credible casino information that’s unrivaled on detail. To ensure we only
+                            recommend sites of the highest quality, we’ve developed a comprehensive set of criteria that casinos must meet. On this page, we’ll take you through each of the 25-steps in
+                            our process, so you can see both what it is we’re looking for and how we put each casino to the test.
+                        </p>
+                        <p>
+                            At any point, players use real money to gamble with. When a player wins, they are repaid with real money that can be withdrawn as long as it exceeds the casino site’s
+                            minimum withdrawal amount. If a player is in a position where they have won<a href="#"> bonus money</a>, real money will still be used first. Once those funds are finished,
+                            only then will bonus money be used to continue playing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+                </article>
+            </main>
+            <div class="search-panel">
+    <div class="container">
+        <div class="search-panel__body">
+            <form action="#" class="form">
+                <div class="form__item">
+                    <input data-search class="form__input" id="search" name="search" type="search" placeholder="Enter casiono name, slots, bonuses..." />
+                </div>
+                <button><span class="icon-loop"></span></button>
+            </form>
+            <div class="search-panel__close"><span></span><span></span></div>
+        </div>
+    </div>
+</div>
+
+            <div class="overlay"><div data-modal="send" class="popup popup-send hidden">
+    <div data-close-modal class="popup__close"><span></span><span></span></div>
+    <div class="popup__img">
+        <img loading="lazy" src="images/popup/mail.svg" alt="mail" title="mail" />
+    </div>
+    <div class="popup__title">We sent you an e-mail</div>
+    <p>Check your inbox and click the link we sent to:</p>
+    <div class="popup-send__email">pemeuyoilollu-2858@gmail.com</div>
+    <p>
+        Please check your email and confirm your subscription.<br />
+        If you don't see our message, please check your spam folder.
+    </p>
+    <div class="popup__btns">
+        <button data-resend-email class="btn btn_border">Resend e-mail</button>
+        <button data-close-modal class="btn">OK</button>
+    </div>
+    <div class="popup__succesful"><img loading="lazy" src="images/popup/check.svg" alt="check" title="check" /> Confirmation e-mail has been sent again.</div>
+</div>
+</div>
+        </div>
+        <script defer src="js/jquery.min.js"></script>
+        <script defer src="js/jquery.sticky.js"></script>
+        <script defer src="js/typeahead.bundle.js"></script>
+        <script defer src="js/swiper.js"></script>
+        <script defer src="js/app.js"></script>
+    </body>
+</html>

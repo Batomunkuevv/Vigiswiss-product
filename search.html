@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+    <meta charset="UTF-8" />
+    <title>Search page</title>
+    <meta name="description" content="Chip reviewer" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <link rel="stylesheet" href="css/search.css" />
+</head>
+
+    <body>
+        <div class="wrapper">
+            <header class="site-header">
+    <div class="container">
+        <div class="site-header__top">
+            <div class="site-panel">
+                <a href="<?= $host_url; ?>/" class="header-logo logo">
+                    <picture>
+                        <source srcset="images/logo-mobile.svg" media="(max-width: 576px)" />
+                        <img loading="lazy" src="images/logo.svg" alt="Logo vigiswiss.ch" title="logo" />
+                    </picture>
+                </a>
+                <div class="site-header__advantages">
+                    <div class="site-header__advantage"><img loading="lazy" src="images/icons/casino.svg" alt="casino" title="casino" /> 5 789 casino tested by us</div>
+                    <div class="site-header__advantage"><img loading="lazy" src="images/icons/check-star.svg" alt="check star" title="check star" /> Wir sind 100% unabhängig</div>
+                </div>
+            </div>
+            <div class="user-panel">
+                <div data-notifications class="gifts">
+                    <div data-notifications-open class="gifts__icon">
+                        <picture>
+                            <source srcset="images/header/gift-mobile.svg" media="(max-width: 576px)" />
+                            <img loading="lazy" src="images/header/gift.svg" alt="gift" title="gift" />
+                        </picture>
+                        <span class="gifts__count"></span>
+                    </div>
+                    <div data-notifications-body class="gifts__body">
+                        <b class="gifts__title">Exclusive Bonus</b>
+                        <div data-notifications-close class="gifts__close"><span></span><span></span></div>
+                        <ul>
+                            <li class="side-casino side-casino_gift">
+                                <div class="side-casino__logo">
+                                    <img src="images/top3/pino.svg" alt="pino" title="pino" />
+                                </div>
+                                <div class="side-casino__bonus">10€ einzahlen und 30€ Bonus erhalten</div>
+                                <button onclick="window.open('','_blank')" class="side-casino__btn btn"><span class="icon-arrow-more"></span></button>
+                            </li>
+                            <li class="side-casino side-casino_gift">
+                                <div class="side-casino__logo">
+                                    <img src="images/top3/betfair.svg" alt="betfair" title="betfair" />
+                                </div>
+                                <div class="side-casino__bonus">10€ einzahlen und 30€ Bonus erhalten</div>
+                                <button onclick="window.open('','_blank')" class="side-casino__btn btn"><span class="icon-arrow-more"></span></button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="user-panel__links">
+                    <li>
+                        <a href="#" class="site-header__question"
+                            ><svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" width="24" height="24" rx="12" fill="white" />
+                                <path
+                                    d="M12.5559 6.28C13.3133 6.28 13.9853 6.392 14.5719 6.616C15.1586 6.84 15.6173 7.17067 15.9479 7.608C16.2786 8.03467 16.4439 8.56267 16.4439 9.192C16.4439 9.832 16.3053 10.36 16.0279 10.776C15.7613 11.1813 15.3986 11.4907 14.9399 11.704C14.4813 11.9067 13.9746 12.04 13.4199 12.104L13.3079 13.608H11.3079L11.3239 11.192C12.0386 11.1067 12.5933 10.9947 12.9879 10.856C13.3933 10.7067 13.6759 10.52 13.8359 10.296C14.0066 10.072 14.0919 9.80533 14.0919 9.496C14.0919 9.19733 14.0279 8.94667 13.8999 8.744C13.7826 8.54133 13.6013 8.38667 13.3559 8.28C13.1106 8.17333 12.7959 8.12 12.4119 8.12C11.8573 8.12 11.4146 8.28 11.0839 8.6C10.7533 8.90933 10.5506 9.352 10.4759 9.928L8.39594 9.128C8.52394 8.57333 8.7586 8.08267 9.09994 7.656C9.44127 7.21867 9.8946 6.88267 10.4599 6.648C11.0359 6.40267 11.7346 6.28 12.5559 6.28ZM12.3319 14.68C12.7479 14.68 13.0786 14.792 13.3239 15.016C13.5693 15.24 13.6919 15.5387 13.6919 15.912C13.6919 16.296 13.5693 16.6 13.3239 16.824C13.0786 17.0373 12.7479 17.144 12.3319 17.144C11.9159 17.144 11.5853 17.0373 11.3399 16.824C11.0946 16.6 10.9719 16.296 10.9719 15.912C10.9719 15.5387 11.0946 15.24 11.3399 15.016C11.5853 14.792 11.9159 14.68 12.3319 14.68Z"
+                                    fill="#1A1A27"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="<?= $host_url; ?>/uber-uns/">Uber Uns</a></li>
+                </ul>
+                <div data-notifications class="notifications">
+                    <div data-notifications-open class="notifications__icon active">
+                        <img loading="lazy" src="images/icons/notification.svg" alt="notification" title="notification" />
+                    </div>
+                    <div data-notifications-body class="notifications__body">
+                        <div data-notifications-close class="notifications__close"><span></span><span></span></div>
+                        <b class="notifications__title">What’s new</b>
+                        <ul class="notifications__list">
+                            <li>
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/01.jpg" alt="01" title="01" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Neosurf Ticket kaufen Österreich</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/02.jpg" alt="02" title="02" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Neosurf Ticket kaufen Österreich</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li>
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/03.jpg" alt="03" title="03" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Kaufen Sie Jeton Cash in der Schweiz 2022</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="hidden">
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/03.jpg" alt="03" title="03" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Kaufen Sie Jeton Cash in der Schweiz 2022</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                            <li class="hidden">
+                                <article class="notifications-article">
+                                    <div class="notifications-article__img">
+                                        <img loading="lazy" src="images/notifications/03.jpg" alt="03" title="03" />
+                                    </div>
+                                    <div class="notifications-article__content">
+                                        <h5><a href="#">Kaufen Sie Jeton Cash in der Schweiz 2022</a></h5>
+                                        <div class="article-info">
+                                            <a href="#"> Torsten Schulz </a>
+                                            <p>Oktober 13, 2021</p>
+                                        </div>
+                                    </div>
+                                </article>
+                            </li>
+                        </ul>
+                        <button class="notifications__more" data-open="View all" data-close="Zeige weniger">View all</button>
+                    </div>
+                </div>
+                <button class="burger-menu">
+                    <span class="open">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19.875 7.12549H4.12501" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M19.875 12H10.125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M19.875 16.874H7.125" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" />
+                        </svg>
+                    </span>
+                    <span class="close">
+                        <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.34493 1.69509L16.5253 16.66" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                            <path d="M1.47489 16.305L16.6552 1.34003" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </span>
+                </button>
+            </div>
+            <div class="lang mobile-hidden">
+                <div class="lang-current">
+                    <span>DE</span>
+                    <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            fill-rule="evenodd"
+                            clip-rule="evenodd"
+                            d="M0.21967 0.21967C0.512563 -0.0732233 0.987437 -0.0732233 1.28033 0.21967L5.25 4.18934L9.21967 0.21967C9.51256 -0.0732233 9.98744 -0.0732233 10.2803 0.21967C10.5732 0.512563 10.5732 0.987437 10.2803 1.28033L5.78033 5.78033C5.48744 6.07322 5.01256 6.07322 4.71967 5.78033L0.21967 1.28033C-0.0732233 0.987437 -0.0732233 0.512563 0.21967 0.21967Z"
+                            fill="white"
+                        />
+                    </svg>
+                </div>
+                <ul class="lang-select">
+                    <li>
+                        <a href="<?= $host_url; ?>/fr/casino-en-ligne/"> FR </a>
+                    </li>
+                    <li>
+                        <a href="<?= $host_url; ?>/en/online-casinos/"> EN </a>
+                    </li>
+                    <li>
+                        <a href="<?= $host_url; ?>/it/casino-online/"> IT </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="site-header__bottom">
+            <div class="site-header__user-mobile">
+                <ul>
+                    <li>
+                        <a href="#" class="site-header__question"
+                            ><svg viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <rect x="0.5" width="24" height="24" rx="12" fill="white" />
+                                <path
+                                    d="M12.5559 6.28C13.3133 6.28 13.9853 6.392 14.5719 6.616C15.1586 6.84 15.6173 7.17067 15.9479 7.608C16.2786 8.03467 16.4439 8.56267 16.4439 9.192C16.4439 9.832 16.3053 10.36 16.0279 10.776C15.7613 11.1813 15.3986 11.4907 14.9399 11.704C14.4813 11.9067 13.9746 12.04 13.4199 12.104L13.3079 13.608H11.3079L11.3239 11.192C12.0386 11.1067 12.5933 10.9947 12.9879 10.856C13.3933 10.7067 13.6759 10.52 13.8359 10.296C14.0066 10.072 14.0919 9.80533 14.0919 9.496C14.0919 9.19733 14.0279 8.94667 13.8999 8.744C13.7826 8.54133 13.6013 8.38667 13.3559 8.28C13.1106 8.17333 12.7959 8.12 12.4119 8.12C11.8573 8.12 11.4146 8.28 11.0839 8.6C10.7533 8.90933 10.5506 9.352 10.4759 9.928L8.39594 9.128C8.52394 8.57333 8.7586 8.08267 9.09994 7.656C9.44127 7.21867 9.8946 6.88267 10.4599 6.648C11.0359 6.40267 11.7346 6.28 12.5559 6.28ZM12.3319 14.68C12.7479 14.68 13.0786 14.792 13.3239 15.016C13.5693 15.24 13.6919 15.5387 13.6919 15.912C13.6919 16.296 13.5693 16.6 13.3239 16.824C13.0786 17.0373 12.7479 17.144 12.3319 17.144C11.9159 17.144 11.5853 17.0373 11.3399 16.824C11.0946 16.6 10.9719 16.296 10.9719 15.912C10.9719 15.5387 11.0946 15.24 11.3399 15.016C11.5853 14.792 11.9159 14.68 12.3319 14.68Z"
+                                    fill="#1A1A27"
+                                />
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a href="<?= $host_url; ?>/uber-uns/">Uber Uns</a></li>
+                </ul>
+                <div class="lang">
+                    <div class="lang-current">
+                        <span>DE</span>
+                        <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M0.21967 0.21967C0.512563 -0.0732233 0.987437 -0.0732233 1.28033 0.21967L5.25 4.18934L9.21967 0.21967C9.51256 -0.0732233 9.98744 -0.0732233 10.2803 0.21967C10.5732 0.512563 10.5732 0.987437 10.2803 1.28033L5.78033 5.78033C5.48744 6.07322 5.01256 6.07322 4.71967 5.78033L0.21967 1.28033C-0.0732233 0.987437 -0.0732233 0.512563 0.21967 0.21967Z"
+                                fill="white"
+                            />
+                        </svg>
+                    </div>
+                    <ul class="lang-select">
+                        <li><a href="<?= $host_url; ?>/fr/casino-en-ligne/">FR</a></li>
+                        <li><a href="<?= $host_url; ?>/en/online-casinos/">EN</a></li>
+                        <li><a href="<?= $host_url; ?>/it/casino-online/">IT</a></li>
+                    </ul>
+                </div>
+            </div>
+            <nav class="menu">
+                <ul class="menu__list">
+                    <li class="dropdown">
+                        <a href="/online-casinos/"
+                            >Online Casinos<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/online-casinos/legal/">Legal Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/mobile/">Mobile Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/echtgeld/">Echtgeld Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/neu/">Neue Casinos</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/live/">Live Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/ausland/">Ausland Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/bonus/">Casino Bonus</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/high-roller/">High Roller Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/serioese/">Seriöses Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/chf/">Casinos mit Schweizer Franken</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="<?= $host_url; ?>/online-casinos/zahlungmethoden/"
+                            >Zahlungmethoden<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/online-casinos/casino-mit-handyrechnung/">Handyrechnung bezahlen</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/paysafe/">Paysafecard</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/twint/">Twint</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/neosurf/">Neosurf</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/ecopayz/">EcoPayz</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/skrill/">Skrill</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/postfinance/">Postfinance</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/sofortueberweisung/">Sofort</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/jeton/">Jeton</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/lastschrift/">Lastschrift</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/litecoin/">Litecoin</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/ethereum/">Ethereum</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/dogecoin/">Dogecoin</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/apple-pay/">Apple Pay</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/google-pay/">Google Pay</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/mifinity/">MiFinity</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/bitcoin/">Bitcoin</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/paypal/">PayPal</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/visa/">Visa</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/neteller/">Neteller</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/cashlib/">Cashlib</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/flexepin/">Flexepin</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/mastercard/">Mastercard</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/sportwetten/"
+                            >Sportwetten<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/sportwetten/fussball/">Fussball Wetten</a></li>
+                            <li><a href="<?= $host_url; ?>/sportwetten/bonus/">Wetten Bonus</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="<?= $host_url; ?>/bingo/">Bingo</a></li>
+                    <li class="dropdown">
+                        <a href="<?= $host_url; ?>/poker/"
+                            >Online Poker<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/poker/pokerstars/">Pokerstars Erfahrungen</a></li>
+                            <li><a href="<?= $host_url; ?>/poker/bonus/">Online Poker Bonus</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="/casino-verzeichnis/"
+                            >Casino Tests<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/online-casinos/goodman-casino/">Goodman Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/bizzo-casino/">Bizzo Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/20bet-casino/">20Bet Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/euslot-casino/">EUslot Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/playamo-casino/">Playamo Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/turbico-casino/">Turbico Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/wild-fortune-casino/">Wild Fortune Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/national-casino/">National Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/gslot-casino/">GSlot Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/levelup-casino/">Levelup Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/rolling-slots/">Rolling Slots</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#"
+                            >DACH<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/online-casinos/oesterreich/">Österreich Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/deutschland/">Deutschland Casino</a></li>
+                            <li><a href="<?= $host_url; ?>/online-casinos/liechtenstein/">Liechtenstein Casino</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="<?= $host_url; ?>/blog/"
+                            >Blog<span class="open-sub"
+                                ><svg width="7" height="13" viewBox="0 0 7 13" fill="#ffffff" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M0.585052 0.763963L0.19415 1.15217C0.0720717 1.27434 0.00481773 1.43689 0.00481773 1.61061C0.00481773 1.78424 0.0720717 1.94698 0.19415 2.06915L4.6227 6.49751L0.189236 10.931C0.0671577 11.053 0 11.2157 0 11.3893C0 11.5629 0.0671577 11.7258 0.189236 11.8479L0.577729 12.2362C0.830365 12.489 1.24189 12.489 1.49452 12.2362L6.79207 6.95759C6.91405 6.83561 7 6.67306 7 6.49789V6.49587C7 6.32215 6.91396 6.1596 6.79207 6.03762L1.50888 0.763963C1.3869 0.641788 1.21944 0.574727 1.04581 0.574534C0.872085 0.574534 0.706937 0.641788 0.585052 0.763963Z"
+                                    /></svg></span
+                        ></a>
+                        <ul class="sub-menu">
+                            <li><a href="<?= $host_url; ?>/blog/spielsperre-aufheben-schweiz/">Spielsperre aufheben Schweiz</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/paysafecard-kaufen-schweiz/">Paysafecard Kaufen Schweiz</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/was-genau-sind-mobile-spielautomaten/">Was genau sind mobile Spielautomaten</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/neosurf-kaufen-schweiz/">Neosurf kaufen in der Schweiz 2022</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/glucksrad-online/">Online Glücksrad – eines der einfachsten Glücksspiele</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/jeton-cash/">Kaufen Sie Jeton Cash in der Schweiz 2022</a></li>
+                            <li><a href="<?= $host_url; ?>/blog/casino-gewinne-versteuern-schweiz/">Online Casino Gewinn Steuern Schweiz 2022: Bedingungen und Voraussetzungen</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="site-header__search">
+                <span class="icon-loop"></span>
+                <form action="#" class="form form_search">
+                    <div class="form__item">
+                        <input data-search class="form__input" id="search" name="search" type="search" placeholder="Enter casiono name, slots, ..." />
+                    </div>
+                    <button><span class="icon-loop"></span></button>
+                </form>
+            </div>
+        </div>
+    </div>
+</header>
+
+            <main class="page">
+                <article><section class="search-result">
+    <div class="container">
+        <div class="search-result__body">
+            <form id="search" action="#" class="form form_search">
+                <div class="form__item form__item_search">
+                    <input data-search class="form__input" id="search" name="search" type="search" placeholder="Enter casiono name, slots, bonuses..." />
+                </div>
+                <button class="btn">Search</button>
+            </form>
+            <div class="search-result__count">Showing results <b>1 to 10</b> of <b>5416</b></div>
+        </div>
+    </div>
+</section>
+ <section class="search-articles">
+    <div class="container">
+        <div class="search-articles__wrapper">
+            <div class="search-articles__body">
+                <article>
+                    <h3>
+                        <a href="#">Casino Market Accounts: Casino Market Rates</a>
+                    </h3>
+                    <p>…Compare the best <b>casino</b> market accounts rates across thousands of banks and credit unions. Find the highest <b>casino</b> market rates and open an account today.…</p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">Managing Casino</a>
+                    </h3>
+                    <p>…Finding ways to stretch what you've got gives you the freedom to do more with your <b>casino</b>.…</p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">Personal Finance Defined: The Guide to Maximizing Your Casino</a>
+                    </h3>
+                    <p>
+                        …Personal finance is the process of making <b>casino</b>, saving <b>casino</b>, building wealth and protecting assets. Here are matters related to managing your <b>casino</b>.…
+                    </p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">Casino Market Accounts: Casino Market Rates</a>
+                    </h3>
+                    <p>…Compare the best <b>casino</b> market accounts rates across thousands of banks and credit unions. Find the highest <b>casino</b> market rates and open an account today.…</p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">Managing Casino</a>
+                    </h3>
+                    <p>…Finding ways to stretch what you've got gives you the freedom to do more with your <b>casino</b>.…</p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">Personal Finance Defined: The Guide to Maximizing Your Casino</a>
+                    </h3>
+                    <p>
+                        …Personal finance is the process of making <b>casino</b>, saving <b>casino</b>, building wealth and protecting assets. Here are matters related to managing your <b>casino</b>.…
+                    </p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">Casino Market Accounts: Casino Market Rates</a>
+                    </h3>
+                    <p>…Compare the best <b>casino</b> market accounts rates across thousands of banks and credit unions. Find the highest <b>casino</b> market rates and open an account today.…</p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">Managing Casino</a>
+                    </h3>
+                    <p>…Finding ways to stretch what you've got gives you the freedom to do more with your <b>casino</b>.…</p>
+                </article>
+                <article>
+                    <h3>
+                        <a href="#">Personal Finance Defined: The Guide to Maximizing Your Casino</a>
+                    </h3>
+                    <p>
+                        …Personal finance is the process of making <b>casino</b>, saving <b>casino</b>, building wealth and protecting assets. Here are matters related to managing your <b>casino</b>.…
+                    </p>
+                </article>
+            </div>
+            <ul class="pagination">
+                <li>
+                    <a href="#"><span class="icon-arrow-more pagination__arrow"></span></a>
+                </li>
+                <li class="current"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li>
+                    <a href="#"><span class="icon-arrow-more pagination__arrow"></span></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+</article>
+            </main>
+            <div class="search-panel">
+    <div class="container">
+        <div class="search-panel__body">
+            <form action="#" class="form">
+                <div class="form__item">
+                    <input data-search class="form__input" id="search" name="search" type="search" placeholder="Enter casiono name, slots, bonuses..." />
+                </div>
+                <button><span class="icon-loop"></span></button>
+            </form>
+            <div class="search-panel__close"><span></span><span></span></div>
+        </div>
+    </div>
+</div>
+
+        </div>
+        <script defer src="js/jquery.min.js"></script>
+        <script defer src="js/jquery.sticky.js"></script>
+        <script defer src="js/typeahead.bundle.js"></script>
+        <script defer src="js/search.js"></script>
+    </body>
+</html>
